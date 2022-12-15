@@ -1,0 +1,9 @@
+name: list-non-hidden-action
+run-name: Listing all non hidden file types
+on: [push]
+jobs:
+  list-items-recursively:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: ls -lR
