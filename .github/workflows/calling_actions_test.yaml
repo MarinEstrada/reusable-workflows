@@ -1,0 +1,10 @@
+name: calling-actions-with-actions
+run-name: say hello world and list directory
+on:
+  push:
+    branches:
+      - 'actions_on_actions'
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v3
