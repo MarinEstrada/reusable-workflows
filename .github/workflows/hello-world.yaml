@@ -1,6 +1,9 @@
 name: hello-world-action
 run-name: ${{github.actor}} is saying hello world!
-on: [push]
+on:
+  push:
+    branches:
+      - 'main'
 jobs:
   say-hello:
     runs-on: ubuntu-latest

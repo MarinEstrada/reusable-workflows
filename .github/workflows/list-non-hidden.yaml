@@ -1,6 +1,9 @@
 name: list-non-hidden-action
 run-name: Listing all non hidden file types
-on: [push]
+on:
+  push:
+    branches:
+      - 'main'
 jobs:
   list-items-recursively:
     runs-on: ubuntu-latest
