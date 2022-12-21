@@ -1,6 +1,7 @@
 name: list-non-hidden-action
 run-name: Listing all non hidden file types
 on:
+  workflow_call:
   push:
     branches:
       - 'main'

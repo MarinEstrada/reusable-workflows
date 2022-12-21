@@ -1,6 +1,7 @@
 name: hello-world-action
 run-name: ${{github.actor}} is saying hello world!
 on:
+  workflow_call:
   push:
     branches:
       - 'main'
