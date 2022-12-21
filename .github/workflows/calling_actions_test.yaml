@@ -3,8 +3,11 @@ run-name: say hello world and list directory
 on:
   push:
     branches:
-      - 'actions_on_actions'
+      - 'actions_actions_test'
 jobs:
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v3
+    - uses: MarinEstrada/reusable-workflows/.github/workflows/hello-world.yaml@actions_on_actions
+    - uses: MarinEstrada/reusable-workflows/.github/workflows/list-non-hidden.yaml@actions_on_actions
+    - uses: MarinEstrada/reusable-workflows/.github/workflows/learn-github-actions.yaml@actions_on_actions
